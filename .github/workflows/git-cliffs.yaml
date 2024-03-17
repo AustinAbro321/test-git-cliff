@@ -19,6 +19,6 @@ jobs:
         id: git-cliff-1
         with:
           config: cliff.toml
-          args: -v --latest --include-path
+          args: -v
         env:
           OUTPUT: CHANGES1.md
