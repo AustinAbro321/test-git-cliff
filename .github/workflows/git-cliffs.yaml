@@ -2,8 +2,6 @@ name: Release Helpers
 
 on:
   push:
-    branches:
-      - main
     tags:
       - "v*.*.*"
   workflow_dispatch:
