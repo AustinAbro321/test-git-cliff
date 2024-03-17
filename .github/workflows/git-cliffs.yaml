@@ -24,7 +24,7 @@ jobs:
 
       - name: Generate a changelog for helpers
         uses: orhun/git-cliff-action@v3
-        id: git-cliff-1
+        id: git-cliff-2
         with:
           config: cliff.toml
           args: -v --include-path "helpers/*"
