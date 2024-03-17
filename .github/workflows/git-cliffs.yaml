@@ -20,5 +20,11 @@ jobs:
         with:
           config: cliff.toml
           args: -v
-        env:
-          OUTPUT: CHANGES1.md
+
+
+      - name: Generate a changelog for helpers
+        uses: orhun/git-cliff-action@v3
+        id: git-cliff-1
+        with:
+          config: cliff.toml
+          args: -v --include-path "helpers/*"
